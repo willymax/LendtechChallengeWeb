@@ -17,6 +17,20 @@ $ npm run start
 $ npm run generate
 ```
 
+## Build and run using docker
+
+```bash
+# build a docker container
+$ docker build -t lendtech-web-william .
+
+# run the docker container
+# exposes port 3000
+$ docker run -it -p 3000:3000 lendtech-web-william
+
+# access running application from
+http://localhost:3000/
+```
+
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
 
 ## Special Directories
